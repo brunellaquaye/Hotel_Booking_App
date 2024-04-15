@@ -9,6 +9,7 @@ import { useNavigation } from "@react-navigation/native";
 
 const Onboarding4 = () => {
   const insets = useSafeAreaInsets();
+  const navigation = useNavigation();
 
   return (
     <View
@@ -103,6 +104,7 @@ const Onboarding4 = () => {
         </Text>
       </TouchableOpacity>
       <TouchableOpacity
+      onPress={()=> navigation.navigate("Profile")}
         style={{
           borderRadius: wp("10px"),
           width: wp("80px"),

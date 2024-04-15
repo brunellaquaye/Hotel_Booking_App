@@ -65,47 +65,52 @@ const Onboarding5 = () => {
             justifyContent: "center",
           }}
         >
-          Choose the location and we have many hotel recommendations wherever you are.
+          Choose the location and we have many hotel recommendations wherever
+          you are.
         </Text>
-        
       </View>
 
-      
-
       <TouchableOpacity
-      onPress={()=>navigation.navigate("Onboarding4")}
-      style={{
-        backgroundColor: "#3D5BF6",
-        borderRadius: wp("10px"),
-        width: wp("80px"),
-        height: hp("7px"),
-        justifyContent: "center",
-        alignItems: "center",
-        marginTop: hp("1px"),
-        marginBottom: hp("2px"),
-      }}>
-        <Text
+        onPress={() => navigation.navigate("Onboarding4")}
         style={{
-          color: "#FFFFFF",
-        }}>Continue</Text>
+          backgroundColor: "#3D5BF6",
+          borderRadius: wp("10px"),
+          width: wp("80px"),
+          height: hp("7px"),
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: hp("1px"),
+          marginBottom: hp("2px"),
+        }}
+      >
+        <Text
+          style={{
+            color: "#FFFFFF",
+          }}
+        >
+          Continue
+        </Text>
       </TouchableOpacity>
 
       <TouchableOpacity
-      onPress={()=>navigation.navigate("Onboarding4")}
-
-      style={{
-        borderRadius: wp("10px"),
-        width: wp("80px"),
-        height: hp("7px"),
-        justifyContent: "center",
-        alignItems: "center",
-        // marginTop: hp("1px"),
-        // marginBottom: hp("10px"),
-      }}>
-        <Text
+        onPress={() => navigation.navigate("Onboarding4")}
         style={{
-          color: "#3D5BF6",
-        }}>Skip</Text>
+          borderRadius: wp("10px"),
+          width: wp("80px"),
+          height: hp("7px"),
+          justifyContent: "center",
+          alignItems: "center",
+          // marginTop: hp("1px"),
+          // marginBottom: hp("10px"),
+        }}
+      >
+        <Text
+          style={{
+            color: "#3D5BF6",
+          }}
+        >
+          Skip
+        </Text>
       </TouchableOpacity>
     </View>
   );
